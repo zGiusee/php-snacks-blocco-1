@@ -1,4 +1,4 @@
-Esercizio di oggi: Blocco PHPSnacks cicli <br>
+# Esercizio di oggi: Blocco PHPSnacks cicli <br>
 nome repo: php-snacks-blocco-1 <br>
 All'interno della repo per ogni snack create una sottocartella chiamata snack_NUMERO_SNACK.
 ## Snack 1 <br>
