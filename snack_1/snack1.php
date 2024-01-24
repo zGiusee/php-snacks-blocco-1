@@ -1,5 +1,45 @@
 <?php
 
+// Dfinisco l'array delle partite disputate
+$match = [
+    [
+        'home' => 'Atlanta Hawks',
+        'guest' => 'Oklahoma City Thunder',
+        'home_points' => 103,
+        'guest_points' => 106
+    ],
+    [
+        'home' => 'Chicago Bulls',
+        'guest' => 'Charlotte Hornets',
+        'home_points' => 113,
+        'guest_points' => 127
+    ],
+    [
+        'home' => 'Cleveland Cavaliers',
+        'guest' => 'Denver Nuggets',
+        'home_points' => 98,
+        'guest_points' => 132
+    ],
+    [
+        'home' => 'Golden State Warriors',
+        'guest' => 'Los Angeles Clippers',
+        'home_points' => 124,
+        'guest_points' => 110
+    ],
+    [
+        'home' => 'Los Angeles Lakers',
+        'guest' => 'Phoenix Suns',
+        'home_points' => 112,
+        'guest_points' => 112
+    ],
+    [
+        'home' => 'Sacramento Kings',
+        'guest' => 'New Orleans Pelicans',
+        'home_points' => 133,
+        'guest_points' => 131
+    ],
+]
+
 ?>
 
 <!DOCTYPE html>
