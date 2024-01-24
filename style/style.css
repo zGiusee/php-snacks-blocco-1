@@ -1,5 +1,18 @@
+/* GENERALS */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+.my-bg-black{
+    background-color: rgb(29, 29, 29);
+}
+
+
+/* SNACK 1 */
+.match_info_container{
+    background-color: rgb(194, 238, 90);
+    padding: 15px 15px;
+    border-radius: 10px;
 }
