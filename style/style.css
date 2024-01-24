@@ -9,6 +9,13 @@
     background-color: rgb(29, 29, 29);
 }
 
+/* SNACK 3 */
+.article_container{
+    background-color: wheat;
+    padding: 15px 15px;
+    border-radius: 10px;
+}
+
 
 /* SNACK 1 */
 .match_info_container{

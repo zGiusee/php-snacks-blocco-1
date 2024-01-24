@@ -22,6 +22,12 @@ $articles = [
             'title' => 'Limiti di velocità, interviene il ministero: "È arbitrario generalizzarli in città" ',
             'author' => 'Ricky Mattei',
             'text' => 'Dopo le ordinanze del Comune di Bologna che istituiscono in città il limite di 30 km/h, la direttiva precisa che l abbassamento può essere deciso solo in aree limitate e per specifici motivi'
+        ],
+        [
+            'fonte' => 'TGCOM 24',
+            'title' => 'Limiti di velocità, interviene il ministero: "È arbitrario generalizzarli in città" ',
+            'author' => 'Ricky Mattei',
+            'text' => 'Dopo le ordinanze del Comune di Bologna che istituiscono in città il limite di 30 km/h, la direttiva precisa che l abbassamento può essere deciso solo in aree limitate e per specifici motivi'
         ]
     ],
     '25/04/2024' => [
@@ -67,8 +73,38 @@ $articles = [
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="my-bg-black">
+    <main>
+        <div class="container mt-5">
+            <?php foreach ($articles as $index => $article) {  ?>
+                <!-- Data delle notizie  -->
+                <h1 class="text-white fw-bold">Notizie del: <?php echo $index ?></h1>
+                <div class="row pb-5">
 
+                    <?php foreach ($article as $article_info) {  ?>
+                        <div class="col-6">
+
+                            <div class="article_container mt-3">
+                                <!-- Fonte notizia -->
+                                <p class="fw-blod py-2">Fonte: <?php echo $article_info['fonte']; ?> </p>
+
+                                <!-- Titolo notizia -->
+                                <h2 class=" text-center fw-bold py-2  "><?php echo $article_info['title'];  ?></h2>
+
+                                <!-- Testo notizia -->
+                                <p class=" text-center py-2"><?php echo $article_info['text'];  ?></p>
+
+                                <!-- Autore -->
+                                <p class="text-end py-2">Autore: <?php echo $article_info['author'];  ?></p>
+                            </div>
+
+                        </div>
+                    <?php } ?>
+
+                </div>
+            <?php } ?>
+        </div>
+    </main>
 </body>
 
 </html>
