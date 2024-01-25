@@ -12,23 +12,21 @@ if (isset($_GET['name']) && isset($_GET['mail']) && isset($_GET['age'])) {
     $userAge = $_GET['age'];
 
     // Definisco le condizioni per l'inserimento dei dati
-    if(strlen($userName) < 3){
-        
+    if (strlen($userName) < 3) {
+
         $accesso = 'Accesso negato, il tuo username non puoi essere più corto di 3 caratteri!';
-
-    }elseif (is_numeric($userAge) == false){
-
-        $accesso ="Accesso negato, l'età che hai inserito non è un numero!";
         
-    }elseif(!str_contains($userEmail, '.') && !str_contains($userEmail, '@')){
+    } elseif (is_numeric($userAge) == false) {
 
-        $accesso ='Accesso negato, la mail che hai inserito non è scritta correttamente!';
+        $accesso = "Accesso negato, l'età che hai inserito non è un numero!";
 
-    }else{
+    } elseif (!str_contains($userEmail, '.') && !str_contains($userEmail, '@')) {
 
-        $accesso ='Accesso riuscito!';
+        $accesso = 'Accesso negato, la mail che hai inserito non è scritta correttamente!';
+    } else {
+
+        $accesso = 'Accesso riuscito!';
     }
-
 }
 
 ?>
